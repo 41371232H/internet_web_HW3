@@ -22,6 +22,11 @@ gemini、spoonacular API
 
 ## 範例截圖或 Demo 說明
 <img width="1892" height="918" alt="螢幕擷取畫面 2025-10-18 213157" src="https://github.com/user-attachments/assets/e507c4ca-f3ed-4706-b048-173868bfa89c" />
+<img width="1879" height="914" alt="螢幕擷取畫面 2025-10-18 213222" src="https://github.com/user-attachments/assets/53268866-7962-4eb7-a580-10d3fb02f2b0" />
+<img width="1893" height="912" alt="螢幕擷取畫面 2025-10-18 213330" src="https://github.com/user-attachments/assets/a3e56d5b-89db-4ad2-8132-8b6820010ba8" />
+<img width="1882" height="927" alt="螢幕擷取畫面 2025-10-18 213354" src="https://github.com/user-attachments/assets/fe979b0f-4379-4b13-9a3f-a93986932b34" />
+<img width="1886" height="922" alt="螢幕擷取畫面 2025-10-18 213412" src="https://github.com/user-attachments/assets/bd33f7b9-b3d4-4485-a9f2-ce50620a57ae" />
+
 
 ## [影片連結](https://youtu.be/O176byacFfs)
 
