@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>華宇童 | 個人網站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 字體 -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --bg: #f9fafb;
+      --text: #111827;
+      --card: #DCE2F2;
+      --muted: #6b7280;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #AFC0EE;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(0deg, #87A4E8, #503EC6);
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 { font-size: 2.5rem; margin-bottom: .5rem; }
+    header p { font-size: 1.2rem; color: #e0e7ff; }
+    nav { margin-top: 1rem; }
+    nav a {
+      color: white;
+      margin: 0 .75rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    section { padding: 3rem 1rem; max-width: 1200px; margin: auto; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; text-align: center; }
+    .muted { color: var(--muted); text-align: center; margin-bottom: 2rem; }
+
+    /* 作品集 */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,.08);
+      transition: transform .2s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { margin: .5rem 0; }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #1f2937;
+      color: #9ca3af;
+      margin-top: 2rem;
+    }
+    footer a { color: #e5e7eb; margin: 0 .5rem; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* 統一圖片外框大小 */
+    .slide-wrapper {
+      width: 260px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--card);
+      margin: 0 auto 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,.1);
+    }
+
+    .slide-wrapper img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* 技能進度條 */
+    .bar {
+      background: #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 500px;
+      height: 10px;
+      margin-bottom: 0.5rem;
+    }
+    .progress {
+      width: 0;
+      height: 100%;
+      background: var(--primary);
+      animation: fillProgress 1s forwards;
+    }
+
+    @keyframes fillProgress {
+      to { width: var(--width); }
+    }
+
+    /* 左右框排版 */
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: stretch;
+      margin-top: 2rem;
+    }
+
+    .skill { text-align: left; }
+
+    .goals-card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,.1);
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    /* 經歷框 */
+    .experience {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,.1);
+      text-align: left;
+      line-height: 1.8;
+      margin: 2rem auto 0;
+      max-width: 1200px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/102088.jpg" alt="照片" width="200" style="height:auto; display:block; margin:6rem auto 3rem;">
+    <h1>華宇童</h1>
+    <p style="margin: 2rem 0 5rem;">國立台灣師範大學學生，就讀科技應用與人力資源發展學系</p>
+    <nav>
+      <a href="#about">關於我</a>
+      <a href="#projects">作品集</a>
+      <a href="#contact">聯絡我</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>關於我</h2>
+    <p class="muted">嗨！我是宇童，目前學習利用 HTML、CSS、JavaScript 製作響應式、美觀且易用的網站。</p>
+
+    <div class="about-content">
+      <!-- 左邊：技能條 -->
+      <div class="goals-card">
+        <h3>技能</h3>
+        <p>HTML</p>
+        <div class="bar"><div class="progress" style="--width:75%"></div></div>
+        <p>VR</p>
+        <div class="bar"><div class="progress" style="--width:90%"></div></div>
+        <p>Python</p>
+        <div class="bar"><div class="progress" style="--width:70%"></div></div>
+        <p>問題解決</p>
+        <div class="bar"><div class="progress" style="--width:95%"></div></div>
+      </div>
+
+      <!-- 右邊：未來目標 -->
+      <div class="goals-card">
+        <h3>未來目標</h3>
+        <p>
+          我期望在大學階段扎實地學習目前的專業課程，特別是網頁設計與多媒體應用。<br>
+          我認為「遊戲式學習」是一個極具潛力的教學概念，能讓學生在互動中自然而然地學會知識。<br>
+          未來我希望能結合所學，投入數位遊戲式學習的專案，打造兼具趣味與教育性的作品，
+          讓學習過程更有動力以及效率。
+        </p>
+      </div>
+    </div>
+
+    <!-- 經歷 -->
+    <div class="experience">
+      <h3>經歷</h3>
+      <p>
+        在學習程式的過程中，我遇到過許多挑戰。剛開始寫程式時，各種錯誤接連出現——有的程式無法運行，有的結果不如預期。但透過不斷嘗試、調整與修正，我最終完成了作品。這樣的動手解決問題過程，不僅讓我對程式設計充滿成就感，也培養了我不怕錯誤、勇於嘗試的態度。<br>
+        我平時除了程式，也對 VR、數位遊戲等很有興趣。曾經製作過一個VR遊戲式學習專案，設計互動遊戲讓六年級小學生一邊在場景中尋寶闖關，一邊學習國中數學。這個經驗讓我發現，「遊戲式學習」能讓學生在互動中自然而然地吸收知識，而我希望未來能將這個概念應用到更多數位學習專案中，打造兼具趣味與教育性的作品。<br>
+        在團隊合作方面，我善於傾聽他人想法、分工合作，並且樂於分享學習資源。對我而言，學習程式不只是技能的累積，更是一個持續探索新事物、解決問題和創造價值的過程。
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>作品集</h2>
+    <p class="muted">這裡是我最近的一些專案展示：</p>
+    <div class="projects">
+      <div class="card">
+        <h3>數位學習VR專案</h3>
+        <div class="slide-wrapper">
+          <img id="project-slide1" src="images/螢幕擷取畫面 2025-09-27 225548.png" alt="數位學習VR專案">
+        </div>
+        <p>一個遊戲式學習的VR專案，讓小學生可以邊玩邊學習。</p>
+      </div>
+
+      <div class="card">
+        <h3>scratch遊戲專案</h3>
+        <div class="slide-wrapper">
+          <img id="project-slide2" src="images/螢幕擷取畫面 2025-09-27 231756.png" alt="scratch遊戲專案">
+        </div>
+        <p>一個接掉落物小遊戲，學習營養知識與食物攝取。</p>
+      </div>
+
+      <div class="card">
+        <h3>敬請期待</h3>
+        <div class="slide-wrapper">
+          <span style="color:#aaa; font-size:0.9rem;">敬請期待</span>
+        </div>
+        <p>未來會有更多專案作品。</p>
+      </div>
+    </div>
+  </section>
+  <div id="react-root" style="margin-top:20px;"></div>
+  <section id="contact">
+    <h2>聯絡我</h2>
+    <p class="muted">歡迎透過以下方式聯繫我：</p>
+    <p style="text-align:center;">
+      📧 <a>41371232h@gapps.ntnu.edu.tw</a><br>
+      💻 <a href="https://github.com/41371232H/internet_web">github.com/41371232H/internet_web</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 華宇童</p>
+    <p>
+      <a href="https://github.com/41371232H/internet_web">GitHub</a> |
+      <a href="https://www.linkedin.com/in/2905b364bskfbhskw/">LinkedIn</a>
+    </p>
+  </footer>
+
+  <!-- 輪播圖片 JS -->
+  <script>
+  function initSlideshow(imgId, images) {
+    const slideElement = document.getElementById(imgId);
+    let currentSlideIndex = 0;
+    let intervalId = null;
+    let timeoutId = null;
+
+    function nextSlide() {
+      currentSlideIndex = (currentSlideIndex + 1) % images.length;
+      slideElement.src = images[currentSlideIndex];
+    }
+
+    slideElement.addEventListener('mouseenter', () => {
+      if (!intervalId && !timeoutId) {
+        timeoutId = setTimeout(() => {
+          nextSlide();
+          intervalId = setInterval(nextSlide, 1500);
+        }, 500);
+      }
+    });
+
+    slideElement.addEventListener('mouseleave', () => {
+      clearTimeout(timeoutId);
+      clearInterval(intervalId);
+      timeoutId = null;
+      intervalId = null;
+      currentSlideIndex = 0;
+      slideElement.src = images[currentSlideIndex];
+    });
+  }
+
+  initSlideshow("project-slide1", [
+    "images/螢幕擷取畫面 2025-09-27 225548.png",
+    "images/螢幕擷取畫面 2025-09-27 225626.png",
+    "images/螢幕擷取畫面 2025-09-27 225703.png",
+    "images/螢幕擷取畫面 2025-09-27 225741.png"
+  ]);
+
+  initSlideshow("project-slide2", [
+    "images/螢幕擷取畫面 2025-09-27 231756.png",
+    "images/螢幕擷取畫面 2025-09-27 231825.png",
+    "images/螢幕擷取畫面 2025-09-27 232004.png",
+    "images/螢幕擷取畫面 2025-09-27 232042.png"
+  ]);
+  </script>
+</body>
+</html>
