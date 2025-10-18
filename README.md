@@ -21,6 +21,7 @@ gemini、spoonacular API
 ## 安裝與執行方式
 
 ## 範例截圖或 Demo 說明
+<img width="1892" height="918" alt="螢幕擷取畫面 2025-10-18 213157" src="https://github.com/user-attachments/assets/e507c4ca-f3ed-4706-b048-173868bfa89c" />
 
 ## [影片連結](https://youtu.be/O176byacFfs)
 
