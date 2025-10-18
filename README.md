@@ -15,18 +15,18 @@
 透過 Spoonacular API 搜尋相關食譜並顯示圖片與名稱。
 可點選「查看詳情」獲得：料理圖片、食譜摘要、製作時間、份量資訊、原始來源連結
 可點選連結查看Spoonacular網頁詳細資料
+
 ## 使用的 API（如 Gemini 或其他）
 gemini、spoonacular API
 
 ## 安裝與執行方式
-
+使用react創建專案，新增並修改index.html, index.js, AItest.js, spoonacular.js, RecipeSearch.js，安裝@google/genai和Framer Motion，執行npm start
 ## 範例截圖或 Demo 說明
 <img width="1892" height="918" alt="螢幕擷取畫面 2025-10-18 213157" src="https://github.com/user-attachments/assets/e507c4ca-f3ed-4706-b048-173868bfa89c" />
 <img width="1879" height="914" alt="螢幕擷取畫面 2025-10-18 213222" src="https://github.com/user-attachments/assets/53268866-7962-4eb7-a580-10d3fb02f2b0" />
-<img width="1893" height="912" alt="螢幕擷取畫面 2025-10-18 213330" src="https://github.com/user-attachments/assets/a3e56d5b-89db-4ad2-8132-8b6820010ba8" />
+<img width="1893" height="912" alt="螢幕擷取畫面 2025-10-18 213330" src="https://github.com/user-attachments/assets/031e37ca-68c8-493b-9e34-ae882fe8a48d" />
 <img width="1882" height="927" alt="螢幕擷取畫面 2025-10-18 213354" src="https://github.com/user-attachments/assets/fe979b0f-4379-4b13-9a3f-a93986932b34" />
 <img width="1886" height="922" alt="螢幕擷取畫面 2025-10-18 213412" src="https://github.com/user-attachments/assets/bd33f7b9-b3d4-4485-a9f2-ce50620a57ae" />
-
 
 ## [影片連結](https://youtu.be/O176byacFfs)
 
