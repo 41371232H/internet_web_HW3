@@ -16,11 +16,11 @@
 可點選「查看詳情」獲得：料理圖片、食譜摘要、製作時間、份量資訊、原始來源連結
 可點選連結查看Spoonacular網頁詳細資料
 ## 使用的 API（如 Gemini 或其他）
-gemini、spoonacular
+gemini、spoonacular API
 
 ## 安裝與執行方式
 
 ## 範例截圖或 Demo 說明
 
-## 影片連結
+## [影片連結](https://youtu.be/O176byacFfs)
 
