@@ -20,7 +20,7 @@
 gemini、spoonacular API
 
 ## 安裝與執行方式
-使用react創建專案，新增並修改[index.html](https://github.com/41371232H/internet_web_HW3/blob/main/public/index.html), index.js, AItest.js, spoonacular.js, RecipeSearch.js，安裝@google/genai和Framer Motion，執行npm start
+使用react創建專案，新增並修改[index.html](https://github.com/41371232H/internet_web_HW3/blob/main/public/index.html), [index.js](https://github.com/41371232H/internet_web_HW3/blob/main/src/index.js), [AItest.js](https://github.com/41371232H/internet_web_HW3/blob/main/src/AItest.js), [spoonacular.js](https://github.com/41371232H/internet_web_HW3/blob/main/src/spoonacular.js), [RecipeSearch.js](https://github.com/41371232H/internet_web_HW3/blob/main/src/RecipeSearch.js)，安裝@google/genai和Framer Motion，執行npm start
 ## 範例截圖或 Demo 說明
 <img width="1892" height="918" alt="螢幕擷取畫面 2025-10-18 213157" src="https://github.com/user-attachments/assets/e507c4ca-f3ed-4706-b048-173868bfa89c" />
 <img width="1879" height="914" alt="螢幕擷取畫面 2025-10-18 213222" src="https://github.com/user-attachments/assets/53268866-7962-4eb7-a580-10d3fb02f2b0" />
