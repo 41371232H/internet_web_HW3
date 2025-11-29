@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import RecipeSearch from './RecipeSearch';
 import { handleFoodQuery } from './spoonacular';
+import CatAPI from './CatAPI';
 
 export default function LearningAI() {
   const [page, setPage] = useState('home');
@@ -192,13 +193,18 @@ export default function LearningAI() {
                   onClick={() => setTab('chat')}
                   style={{ padding: 6, borderRadius: 8, background: tab === 'chat' ? '#059669' : 'transparent', color: tab === 'chat' ? '#fff' : undefined }}
                 >
-                  💬 Chat
+                  AI聊天
                 </button>
                 <button
                   onClick={() => setTab('recipe')}
                   style={{ padding: 6, borderRadius: 8, background: tab === 'recipe' ? '#059669' : 'transparent', color: tab === 'recipe' ? '#fff' : undefined }}
                 >
-                  🍳 Recipes
+                  食譜查詢
+                </button>
+                <button onClick={() => setTab('cat')}
+                  style={{ padding: 6, borderRadius: 8, background: tab === 'cat' ? '#059669' : 'transparent', color: tab === 'cat' ? '#fff' : undefined }}
+                >
+                  貓咪圖片
                 </button>
               </div>
             </div>
@@ -271,9 +277,12 @@ export default function LearningAI() {
                   ))}
                 </div>
               </>
-            ) : (
+            ) : tab === 'recipe' ? (
               <RecipeSearch />
+            ) : (
+              <CatAPI />
             )}
+
 
             {/* 🔹 提示詞改成填入輸入框，不直接送出 */}
 
