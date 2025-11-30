@@ -2,7 +2,6 @@ import { GoogleGenAI } from '@google/genai';
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import RecipeSearch from './RecipeSearch';
-import { handleFoodQuery } from './spoonacular';
 import CatAPI from './CatAPI';
 
 export default function LearningAI() {
